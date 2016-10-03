@@ -8,7 +8,7 @@ ggforce is a package aimed at providing missing functionality to ggplot2 through
 the extension system introduced with ggplot2 v2.0.0. In general ggplot2 has been
 aimed primarily at ad hoc data visualization in order to investigate the data at 
 hand, and less at utilities for composing custom plots a la D3.js. ggforce is 
-mainly an attempt to address these "shortcomming" (design choices might be a 
+mainly an attempt to address these "shortcomings" (design choices might be a 
 better description). The long term goal is to have a repository of geoms, stats
 etc that are as well documented and implemented as the official ones found in 
 ggplot2.
@@ -19,13 +19,14 @@ recommendation of their use. ggplot2 has been succesfull in being opinionated
 about what functionality should be available. This is good as it insulates the
 user from making bad decisions when analyzing their data, but it also makes it
 difficult to develop novel visualizations using the ggplot2 API. ggforce on the
-other hand positions itself closer to the "anything goes - the user is 
-responsible for the quality of the output". Despite this keep in mind that some
-things are always bad choices in data visualization: rainbow color scales, pie 
-charts, overplotting etc. Don't do these things except with very good reasons.
+other hand positions itself closer to the "anything goes" end of the spectrum - 
+where the user is responsible for the quality of the output. Despite this keep 
+in mind that some things are always bad choices in data visualization: rainbow 
+color scales, pie charts, overplotting etc. Don't do these things except with 
+very good reasons.
 
 ### Installation
-Until more features are available the package will remain solemnly on Github.
+Until more features are available the package will remain solely on Github.
 Once I believe it offers a large enough set of extensions it will be submitted
 to CRAN. Installation of ggforce is currently as follows:
 
@@ -92,13 +93,13 @@ If a PR is for a new feature, it should be self contained, possibly using
 already implemented functionality if applicable. All exported functions should
 be documented following the style from ggplot2 using roxygen2 comment. You can
 credit yourself with the implementation in the documentation. If the feature 
-concerns a visualization appraoch invented by others, please link to the article
+concerns a visualization approach invented by others, please link to the article
 describing the approach.
 
 #### Feature requests
-If a feature is wished, but skill, time or other is lacking to create a full PR,
-please file an issue. The feature request should provide a detailed description
-of the nature of the feature, with links to relevant litterature describing the
+If you desire a feature, but lack the skill or time to create a full PR, please 
+file an issue. The feature request should provide a detailed description of the 
+nature of the feature, with links to relevant litterature describing the 
 visualization type, as well as possible use cases to guide in designing the use
 cases.
 
